@@ -1,0 +1,132 @@
+﻿<Window x:Class="KeyBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeyBox"
+        mc:Ignorable="d"
+        
+        Title="MainWindow" Height="516" Width="1018">
+    <Grid x:Name="ox" Margin="-94,6,-20,-6">
+        <Label Width="40" Height="40">
+            <TextBlock TextWrapping="Wrap">
+            </TextBlock>
+        </Label>
+        <StackPanel x:Name="Box" Margin="103,95,149,135" RenderTransformOrigin="0.498,0.493" Background="#FFE5E5E5">
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="Esc" Content="Esc"  Width="50" Height="40" Margin="112,135, 0,0" HorizontalAlignment="Left" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Click="Esc_Click"/>
+            <Button x:Name="Tab" Content="Tab" Width="70" Height="40"  Margin="112,3, 0,0" HorizontalAlignment="Left" Background="Black" RenderTransformOrigin="3.024,1.354" FontSize="18" Foreground="White" Click="Tab_Click"/>
+            <Button x:Name="Caps" Content="Caps" Width="90" Height="40"  Margin="112,3, 0,0" HorizontalAlignment="Left"  Background="Black" RenderTransformOrigin="3.024,1.354" FontSize="18" Foreground="White" Click="Caps_Click"/>
+            <Button x:Name="Shift" Content="Shift" Width="110" Height="40"  HorizontalAlignment="Left" Margin="112,3, 0,0"  Background="Black" RenderTransformOrigin="3.024,1.354" FontSize="18" Foreground="White" Click="Shift_Click"/>
+            <Button x:Name="Ctrl" Content="Ctrl" Width="60" Height="40"  HorizontalAlignment="Left" Margin="112,3, 0,0" Background="Black" RenderTransformOrigin="3.024,1.354" FontSize="18" Foreground="White" Click="Ctrl_Click"/>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="Ё" Content="Ё"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="165,135,0,0" HorizontalAlignment="Left" Click="Ё_Click"/>
+            <Button x:Name="Й" Content="Й"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="185,3,0,0" HorizontalAlignment="Left" Click="Й_Click"/>
+            <Button x:Name="Ф" Content="Ф"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="205,3,0,0" HorizontalAlignment="Left" Click="Ф_Click"/>
+            <Button x:Name="Я" Content="Я"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="225,3,0,0" HorizontalAlignment="Left" Click="Я_Click"/>
+            <Button x:Name="W" Content="W"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="175,3,0,0" HorizontalAlignment="Left" Click="W_Click"/>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="Один" Content=" 1"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="208,135,0,0" HorizontalAlignment="Left" Click="Один_Click"/>
+            <Button x:Name="Ц" Content="Ц"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="228,3,0,0" HorizontalAlignment="Left" Click="Ц_Click"/>
+            <Button x:Name="Ы" Content="Ы"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="248,3,0,0" HorizontalAlignment="Left" Click="Ы_Click"/>
+            <Button x:Name="Ч" Content="Ч"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="268,3,0,0" HorizontalAlignment="Left" Click="Ч_Click"/>
+            <Button x:Name="Alt" Content="Alt"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="218,3,0,0" HorizontalAlignment="Left" Click="Alt_Click"/>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="Два" Content="2"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="251,135,0,0" HorizontalAlignment="Left" Click="Два_Click"/>
+            <Button x:Name="У" Content="У"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="272,3,0,0" HorizontalAlignment="Left" Click="У_Click"/>
+            <Button x:Name="В" Content="В"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="291,3,0,0" HorizontalAlignment="Left" Click="В_Click"/>
+            <Button x:Name="С" Content="С"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="311,3,0,0" HorizontalAlignment="Left" Click="С_Click"/>
+            <Button x:Name="Пробел" Content=""  Width="200" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="261,3,0,0" HorizontalAlignment="Left" Click="Пробел_Click"/>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="Три" Content="3"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="294,135,0,0" HorizontalAlignment="Left" Click="Три_Click"/>
+            <Button x:Name="К" Content="К"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="315,3,0,0" HorizontalAlignment="Left" Click="К_Click"/>
+            <Button x:Name="А" Content="А"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="334,3,0,0" HorizontalAlignment="Left" Click="А_Click"/>
+            <Button x:Name="М" Content="М"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="354,3,0,0" HorizontalAlignment="Left" Click="М_Click"/>
+            <Button x:Name="_Alt" Content="Alt"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="463,3,0,0" HorizontalAlignment="Left" Click="_Alt_Click"/>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="Четыре" Content="4"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="337,135,0,0" HorizontalAlignment="Left" Click="Четыре_Click"/>
+            <Button x:Name="Е" Content="Е"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="357,3,0,0" HorizontalAlignment="Left" Click="Е_Click"/>
+            <Button x:Name="П" Content="П"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="377,3,0,0" HorizontalAlignment="Left" Click="П_Click"/>
+            <Button x:Name="И" Content="И"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="399,3,0,0" HorizontalAlignment="Left" Click="И_Click"/>
+            <Button x:Name="w" Content="w"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="506,3,0,0" HorizontalAlignment="Left" Click="w_Click_1"/>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="Пять" Content="5"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="380,135,0,0" HorizontalAlignment="Left"/>
+            <Button x:Name="Н" Content="Н"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="400,3,0,0" HorizontalAlignment="Left" Click="Н_Click"/>
+            <Button x:Name="Р" Content="Р"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="420,3,0,0" HorizontalAlignment="Left" Click="Р_Click"/>
+            <Button x:Name="Т" Content="Т"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="440,3,0,0" HorizontalAlignment="Left" Click="Т_Click"/>
+            <Button x:Name="_Ctrl" Content="Ctrl"  Width="60" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="549,3,0,0" HorizontalAlignment="Left" Click="_Ctrl_Click"/>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="Шесть" Content="6"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="423,135,0,0" HorizontalAlignment="Left" Click="Шесть_Click"/>
+            <Button x:Name="Г" Content="Г"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="443,3,0,0" HorizontalAlignment="Left" Click="Г_Click"/>
+            <Button x:Name="О" Content="О"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="463,3,0,0" HorizontalAlignment="Left" Click="О_Click"/>
+            <Button x:Name="Ь" Content="Ь"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="483,3,0,0" HorizontalAlignment="Left" Click="Ь_Click"/>
+            <Button x:Name="Cтрелка_влево" Content=""  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="613,3,0,0" HorizontalAlignment="Left" Click="Cтрелка_влево_Click"/>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="Семь" Content="7"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="466,135,0,0" HorizontalAlignment="Left" Click="Семь_Click"/>
+            <Button x:Name="Ш" Content="Ш"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="486,3,0,0" HorizontalAlignment="Left" Click="Ш_Click"/>
+            <Button x:Name="Л" Content="Л"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="506,3,0,0" HorizontalAlignment="Left" Click="Л_Click"/>
+            <Button x:Name="Б" Content="Б"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="526,3,0,0" HorizontalAlignment="Left" Click="Б_Click"/>
+            <Button x:Name="Cтрелка_вниз" Content=""  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="656,3,0,0" HorizontalAlignment="Left" Click="Cтрелка_вниз_Click"/>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="Восемь" Content="8"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="509,135,0,0" HorizontalAlignment="Left" Click="Семь_Click"/>
+            <Button x:Name="Щ" Content="Щ"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="529,3,0,0" HorizontalAlignment="Left" Click="Ш_Click"/>
+            <Button x:Name="Д" Content="Д"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="549,3,0,0" HorizontalAlignment="Left" Click="Л_Click"/>
+            <Button x:Name="Ю" Content="Ю"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="569,3,0,0" HorizontalAlignment="Left" Click="Б_Click"/>
+            <Button x:Name="Cтрелка_вправо" Content=""  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="699,3,0,0" HorizontalAlignment="Left" Click="Cтрелка_вниз_Click"/>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="Девять" Content="9"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="552,135,0,0" HorizontalAlignment="Left" Click="Семь_Click"/>
+            <Button x:Name="З" Content="З"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="572,3,0,0" HorizontalAlignment="Left" Click="Ш_Click"/>
+            <Button x:Name="Ж" Content="Ж"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="592,3,0,0" HorizontalAlignment="Left" Click="Л_Click"/>
+            <Button x:Name="Точка" Content="."  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="612,3,0,0" HorizontalAlignment="Left" Click="Б_Click"/>
+            <Button x:Name="Функциональная" Content="Fn"  Width="42" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="742,3,0,0" HorizontalAlignment="Left" Click="Cтрелка_вниз_Click"/>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="Ноль" Content="0"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="595,135,0,0" HorizontalAlignment="Left" Click="Семь_Click"/>
+            <Button x:Name="Х" Content="Х"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="615,3,0,0" HorizontalAlignment="Left" Click="Ш_Click"/>
+            <Button x:Name="Э" Content="Э"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="635,3,0,0" HorizontalAlignment="Left" Click="Л_Click"/>
+            <Button x:Name="Стрелка_вверх" Content=""  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="655,3,0,0" HorizontalAlignment="Left" Click="Б_Click"/>
+            <Button x:Name="Параметры" Content="Параметры"  Width="90" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="10" Foreground="White" Margin="788,3,0,0" HorizontalAlignment="Left" Click="Cтрелка_вниз_Click"/>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="Подчеркивание" Content="_"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="638,135,0,0" HorizontalAlignment="Left" Click="Семь_Click"/>
+            <Button x:Name="Ъ" Content="Ъ"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="658,3,0,0" HorizontalAlignment="Left" Click="Ш_Click"/>
+            <Button x:Name="Ввод" Content="Enter"  Width="107" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="13" Foreground="White" Margin="678,3,0,0" HorizontalAlignment="Left" Click="Л_Click"/>
+            <Button x:Name="_Shift" Content="Shift"  Width="87" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="698,3,0,0" HorizontalAlignment="Left" Click="Б_Click"/>
+            <Button x:Name="Справка" Content="Справка"  Width="90" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="13" Foreground="White" Margin="881,3,0,0" HorizontalAlignment="Left" Click="Cтрелка_вниз_Click"/>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="Равно" Content="="  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="681,135,0,0" HorizontalAlignment="Left" Click="Семь_Click"/>
+            <Button x:Name="Обратный_слэш" Content="\"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="701,3,0,0" HorizontalAlignment="Left" Click="Ш_Click"/>
+            <Button x:Name="Insert" Content="Insert"  Width="90" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="788,3,0,0" HorizontalAlignment="Left" Click="Л_Click"/>
+            <Button x:Name="PrtScn" Content="PrtScn"  Width="90" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="788,3,0,0" HorizontalAlignment="Left" Click="Б_Click"/>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="Bksp" Content="Bksp"  Width="60" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="724,135,0,0" HorizontalAlignment="Left" Click="Семь_Click"/>
+            <Button x:Name="Del" Content="Del"  Width="40" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="744,3,0,0" HorizontalAlignment="Left" Click="Ш_Click"/>
+            <Button x:Name="Pause" Content="Pause"  Width="90" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="881,3,0,0" HorizontalAlignment="Left" Click="Л_Click"/>
+            <Button x:Name="Sclk" Content="Sclk"  Width="90" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="881,3,0,0" HorizontalAlignment="Left" Click="Б_Click"/>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="Home" Content="Home"  Width="90" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="788,135,0,0" HorizontalAlignment="Left" Click="Семь_Click"/>
+            <Button x:Name="End" Content="End"  Width="90" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="788,3,0,0" HorizontalAlignment="Left" Click="Ш_Click"/>
+        </StackPanel>
+        <StackPanel>
+            <Button x:Name="PgUp" Content="PgUp"  Width="90" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="881,135,0,0" HorizontalAlignment="Left" Click="Семь_Click"/>
+            <Button x:Name="PgDn" Content="PgDn"  Width="90" Height="40" Background="Black" RenderTransformOrigin="2.234,0.412" FontSize="18" Foreground="White" Margin="881,3,0,0" HorizontalAlignment="Left" Click="Ш_Click"/>
+        </StackPanel>
+        <StackPanel>
+            <Label Content="Экранная клавиатура" HorizontalAlignment="Left" Margin="137,100,0,0" VerticalAlignment="Top" FontWeight="Bold" RenderTransformOrigin="0.496,1.287"/>
+        </StackPanel>
+    </Grid>
+</Window>
